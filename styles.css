@@ -278,3 +278,42 @@ a:focus-visible {
         padding: 24px;
     }
 }
+
+/* Mobile – stacked cards, smaller type
+========================================================================== 
+*/
+@media (max-width: 599px) {
+    :root {
+        --fs-h1: 40px;
+        --fs-h2: 32px;
+        --fs-h3: 20px;
+        --fs-body: 16px;
+    }
+
+    .banner {
+        min-height: 785px;
+        padding-bottom: 135px;
+        align-items: flex-end;
+        background-image:
+            url("assets/banner-wave.svg"),
+            linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.45) 100%),
+            url("assets/main-banner.png");
+
+        background-position: center bottom, center, 67% center;
+    }
+
+    .services {
+        padding-top: 40px;
+        gap: 40px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+
+    .card__image {
+        width: 100%;
+        aspect-ratio: 380 / 266;
+    }
+}
