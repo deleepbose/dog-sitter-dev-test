@@ -167,3 +167,80 @@ a:focus-visible {
     font-size: var(--fs-h1);
     font-weight: 700;
 }
+
+/* Services sections
+   ========================================================================== 
+*/
+.services {
+    max-width: 1248px;
+    margin: 0 auto;
+    padding: 52px 24px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.services__intro {
+    max-width: 689px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.services__title {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    color: var(--heading);
+}
+
+.services__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Service cards
+   ========================================================================== 
+*/
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card__image {
+    width: 100%;
+    aspect-ratio: 380 / 266;
+    object-fit: cover;
+}
+
+.card__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 24px 24px 32px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__title {
+    font-size: var(--fs-h3);
+    font-weight: 500;
+    color: var(--heading);
+}
