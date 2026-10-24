@@ -244,3 +244,37 @@ a:focus-visible {
     font-weight: 500;
     color: var(--heading);
 }
+
+/* Tablet – one card per row, image on the left
+========================================================================== 
+*/
+@media (max-width: 1199px) {
+    .banner {
+        min-height: 480px;
+        padding-top: 140px;
+    }
+
+    .services {
+        gap: 48px;
+    }
+
+    .services__list {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .card {
+        flex-direction: row;
+    }
+
+    .card__image {
+        width: 40%;
+        flex-shrink: 0;
+        aspect-ratio: auto;
+    }
+
+    .card__body {
+        justify-content: center;
+        padding: 24px;
+    }
+}
