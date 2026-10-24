@@ -1,0 +1,120 @@
+/* ==========================================================================
+Dog Sitters Test Website – banner and services sections
+Breakpoints follow the designs based on device widths: desktop 1440, tablet 1024 / 726, mobile 375
+========================================================================== 
+*/
+/* Variables*/
+:root {
+    --white: #fff;
+    --heading: #36413c;
+    --body: #5e6e66;
+    --orange: #de6c17;
+    --orange-hover: #ff6d00;
+    --font: "Quicksand", sans-serif;
+    --fs-h1: 45px;
+    --fs-h2: 36px;
+    --fs-h3: 24px;
+    --fs-body: 18px;
+}
+
+/* Base
+   ========================================================================== 
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: var(--fs-body);
+    line-height: 1.3;
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--heading);
+    outline-offset: 3px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* Button styles
+   ========================================================================== 
+*/
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 167px;
+    min-height: 48px;
+    padding: 12px 33px;
+    border-radius: 4px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: var(--orange-hover);
+}
+
+/* Text link with chevron
+   ========================================================================== 
+*/
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--orange);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.link::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg);
+}
+
+.link:hover,
+.link:focus-visible {
+    color: var(--orange-hover);
+}
