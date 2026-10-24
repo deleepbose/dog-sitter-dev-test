@@ -1,6 +1,11 @@
 /* ==========================================================================
-Dog Sitters Test Website – banner and services sections
-Breakpoints follow the designs based on device widths: desktop 1440, tablet 1024 / 726, mobile 375
+Dog Sitters Test Website – 
+
+by Deleep Bose
+
+banner and services sections
+
+Following designs for device widths: desktop 1440, tablet 1024 / 726, mobile 375
 ========================================================================== 
 */
 /* Variables*/
@@ -117,4 +122,48 @@ a:focus-visible {
 .link:hover,
 .link:focus-visible {
     color: var(--orange-hover);
+}
+
+/* Main Banner
+========================================================================== 
+*/
+.banner {
+    display: flex;
+    min-height: 600px;
+    padding: 178px 24px 120px;
+    background-color: #7a6a62;
+    background-image:
+        url("assets/banner-wave.svg"),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 60%),
+        url("assets/main-banner.png");
+    background-repeat: no-repeat;
+    background-position: center bottom, center, center;
+    background-size: 100% 62px, cover, cover;
+    color: var(--white);
+}
+
+.banner__inner {
+    width: 100%;
+    max-width: 1002px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.banner__text {
+    max-width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner__text p {
+    max-width: 444px;
+}
+
+.banner__title {
+    font-size: var(--fs-h1);
+    font-weight: 700;
 }
